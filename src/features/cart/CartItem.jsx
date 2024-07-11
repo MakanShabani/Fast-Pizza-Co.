@@ -14,16 +14,16 @@ function CartItem({ item }) {
 
   function handleIncrease(e) {
     e.preventDefault();
-    dispatch(increaseItemQuantity(item.id));
+    dispatch(increaseItemQuantity(item.pizzaId));
   }
   function handleDecrease(e) {
     e.preventDefault();
-    dispatch(decreaseItemQuantity(item.id));
+    dispatch(decreaseItemQuantity(item.pizzaId));
   }
 
   function handleDelete(e) {
     e.preventDefault();
-    dispatch(deleteItem(item.id));
+    dispatch(deleteItem(item.pizzaId));
   }
 
   return (
